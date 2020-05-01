@@ -1,0 +1,29 @@
+export default {
+  // cookie domain
+  domain: '58coin.com',
+
+  // href domain
+  // 58coin
+  mainDomain: 'https://www.58coin.com/',
+  // account
+  userDomain: 'https://user.58coin.com/',
+  // spot
+  spotDomain: 'https://spot.58coin.com/',
+  // hash
+  hashDomain: 'https://hash.58coin.com/',
+  // otc
+  otcDomain: 'https://c2c.58coin.com/',
+  // margin
+  marginDomain: 'https://margin.58coin.com/',
+  // mortgageloan
+  loanDomain: 'https://mortgageloan.58coin.com/',
+  // api
+  baseURL: 'https://api.58coin.com/', // 58coin 58spot
+  hashURL: 'https://hashapi.58coin.com/', // hash
+  otcURL: 'https://c2capi.58coin.com/', // otc
+  webSocketURL: 'wss://ws.58coin.com:443/websocket', // webSocket
+  otcSocketURL: 'wss://ws1.58coin.com:443/websocket',
+  zendeskURL: 'https://58coin-support.zendesk.com/',
+  oosImgUrl: 'https://tianbi-test.oss-cn-beijing.aliyuncs.com/',
+  swapsDomain: 'https://swap.58coin.com/'
+}

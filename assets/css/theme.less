@@ -1,0 +1,63 @@
+@import "./superTheme";
+
+/* 颜色规范 */
+@linkColor: #597ab9;
+
+.input {
+  width: 350px;
+  height: 40px;
+  border: 1px solid @inputColor;
+  .border-radius();
+  padding: 0 10px;
+  font-size: 14px;
+  .placeholder({color: @placeholderColor});
+  &.errorInput {
+    border: 1px solid @inputErrorColor;
+  }
+}
+
+.base-button {
+  width: 350px;
+  height: 40px;
+  font-size: 16px;
+  color: #fff;
+  background-color: @buttonColor;
+  border: none;
+  .border-radius();
+  &:hover {
+    background: #3a5a99;
+    cursor: pointer;
+  }
+}
+
+.base-form {
+  margin: 70px 0 0 442px;
+  .st-form-item {
+    margin: 0 0 30px 0;
+    input {
+      .input();
+    }
+    button {
+      .base-button();
+    }
+    &.short {
+      input {
+        width: 200px;
+      }
+      .code {
+        display: inline-block;
+        vertical-align: top;
+      }
+    }
+  }
+  input[type=submit] {
+    .base-button();
+  }
+}
+.keyframes (@name, @frames) {
+  @-webkit-keyframes @name { @frames(); }
+  @-moz-keyframes @name { @frames(); }
+  @-ms-keyframes @name { @frames();}
+  @-o-keyframes @name { @frames(); }
+  @keyframes @name { @frames(); }
+}
